@@ -39,9 +39,23 @@ do
   switch (pl)
   {
    case '1':
-    /* code */
-    mPertama("pertama");
-    break;
+    {
+      system("cls");
+      cout << "Masukkan jumlah data (1-100): ";
+      cin >> n;
+      if (n > 0 && n <= 100) {
+        cout << "Masukkan " << n << " angka:\n";
+        for (int i = 0; i < n; i++) {
+          cout << "Data ke-" << (i + 1) << ": ";
+          cin >> data[i];
+        }
+        cout << "\nData berhasil dimasukkan!";
+      } else {
+        cout << "Jumlah data tidak valid. Harus antara 1-100.";
+      }
+      getch();
+      break;
+    }
    case '2':
     mPertama("ke- dua");
     /* code */ 
