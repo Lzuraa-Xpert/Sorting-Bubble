@@ -2,6 +2,13 @@
 #include <conio.h>
 using namespace std;
 
+int n;
+
+void tukar(int *a, int *b) {
+  int t = *a;
+  *a = *b;
+  *b = t;
+}
 
 void dMenu(){
 system("cls");
@@ -23,6 +30,7 @@ getch();
 
 
 int main() {
+int data[100];
 char pl;
 do
 {
