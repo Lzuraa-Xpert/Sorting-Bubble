@@ -89,9 +89,23 @@ do
     break;
    }  
    case '4':
-    mPertama("ke- empat");
-    /* code */
-    break;  
+   {
+    system("cls");
+    if (n > 0) {
+      for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - i - 1; j++) {
+          if (data[j] < data[j + 1]) {
+            tukar(&data[j], &data[j + 1]);
+          }
+        }
+      }
+      cout << "Data berhasil diurutkan secara descending!";
+    } else {
+      cout << "Data kosong. Masukkan data terlebih dahulu!";
+    }
+    getch();
+    break;
+   }  
   case '5':
     /* code */
     break;
